@@ -1,0 +1,32 @@
+body{
+    background:pink;
+}
+.side-bar{
+    position:relative;
+    width:100%;
+    float:none;
+}
+.main{
+    width:100%;
+    padding-left:10px;
+    padding-right:10px;
+}
+.article-list{
+    margin-right:0px;
+}
+.side-bar .nav,
+.side-bar .tag-list{
+    text-align:center;
+    display:none;
+}
+.side-bar #menu-checkbox:checked~.nav,
+.side-bar #menu-checkbox:checked~.tag-list{
+    display:block;
+}
+#menu-toggle{
+    display:block;
+    position:absolute;
+    right:0px;
+    top:5px;
+    color:rgba(255,255,255,.7)
+}
